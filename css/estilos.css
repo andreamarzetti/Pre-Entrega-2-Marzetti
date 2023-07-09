@@ -1,0 +1,214 @@
+/*reset*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos generales*/
+
+footer form{
+  text-align: center;
+  background-color: rgb(163, 61, 92);
+  margin: 50px;
+  padding: 0px;
+}
+
+body{
+    background-color: rgb(245, 220, 245);
+}
+
+header{
+    padding:10px;
+    text-align: center;
+}
+
+h1{
+    color: rgb(235, 59, 118);
+    font-size: 300%;
+}
+
+h2{
+  color: purple;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+}
+
+.menu{
+    flex-direction: row;    
+    background-color: rgb(182, 177, 187);
+    position: sticky;
+    margin-top: 5px;
+    list-style: none;
+    top: 5px;
+}
+
+.menu div ul li {
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    list-style: none;
+}
+
+.menu div ul li a{
+    margin-bottom: 100px; /* Espacio entre las palabras */
+    color: black;
+    text-decoration: none;
+}
+
+.contenedor {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+  }
+
+
+.imagen1{
+    position: relative;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 50px; /* Tamaño de la imagen */
+    margin-left: 50px; /* Espacio entre las imágenes */
+}
+
+.imagen2{
+    margin-right: 10px; /* Espacio entre la imagen y el título */
+    display: flex;
+    flex-direction: column-reverse;
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 100px; 
+}
+
+h4{
+    text-align: center;
+}
+
+.contenedor-3{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+  column-gap:20px;
+}
+
+.hijo{
+    text-align: center;
+    background-color: rgb(163, 61, 92);
+    margin: 50px;
+    padding: 0px;
+}
+footer h1{
+    text-align: center;
+}
+
+
+/*estilos del index*/
+
+.inicio{
+    color: black;
+    text-align: center;
+}
+
+.contenedor1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+  }
+  
+  .imagen3 {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .imagenes-inicio{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    /*alinear el contenido*/
+    justify-items: center;
+    align-items: center;
+  }
+
+  .imagen4{
+    width: 300px;
+    margin: 10px;
+    display: block;
+    margin: auto;
+  }
+
+  .imagen5{
+    width: 200px;
+    margin: 10px;
+    border-bottom-left-radius: 10px rgb(245, 86, 75);
+  }
+
+  /*estilos de productos*/
+
+  .imagen6{
+    width: 250px;
+    margin: 30px;
+  }
+
+  .imagenes-productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  
+    /*alinear el contenido*/
+    justify-items: center;
+    align-items: center;
+   }
+
+  /*estilos de new in*/
+
+  .imagenes-new-in{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  
+    /*alinear el contenido*/
+    justify-items: center;
+    align-items: center;
+  }
+
+  .imagen7{
+    width: 250px;
+    margin: 30px;
+  }
+  
+
+  /*estilos de liquidacion*/
+
+  .imagenes-liquidacion{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  
+    /*alinear el contenido*/
+    justify-items: center;
+    align-items: center;
+  }
+
+  .imagen8{
+    width: 250px;
+    margin: 30px;
+  }
+  
+  /*estilos de contacto*/
+  
+  .contacto{
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+  }
