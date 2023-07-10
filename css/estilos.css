@@ -35,27 +35,15 @@ h2{
   padding: 10px;
 }
 
-.menu{
-    flex-direction: row;    
-    background-color: rgb(182, 177, 187);
-    position: sticky;
-    margin-top: 5px;
-    list-style: none;
-    top: 5px;
+.menu {
+  flex-direction: row;    
+  background-color: rgb(182, 177, 187);
+  position: sticky;
+  margin-top: 5px;
+  list-style: none;
+  top: 5px;
 }
 
-.menu div ul li {
-    margin: 10px;
-    padding: 10px;
-    display: inline-block;
-    list-style: none;
-}
-
-.menu div ul li a{
-    margin-bottom: 100px; /* Espacio entre las palabras */
-    color: black;
-    text-decoration: none;
-}
 
 .contenedor {
     position: fixed;
@@ -69,7 +57,7 @@ h2{
   }
 
 
-.imagen1{
+.imagen-1{
     position: relative;
     top: 0;
     right: 0;
@@ -78,7 +66,7 @@ h2{
     margin-left: 50px; /* Espacio entre las imágenes */
 }
 
-.imagen2{
+.imagen-2{
     margin-right: 10px; /* Espacio entre la imagen y el título */
     display: flex;
     flex-direction: column-reverse;
@@ -118,14 +106,14 @@ footer h1{
     text-align: center;
 }
 
-.contenedor1 {
+.contenedor-1 {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Ajusta la altura según tus necesidades */
   }
   
-  .imagen3 {
+  .imagen-3 {
     max-width: 100%;
     max-height: 100%;
   }
@@ -140,14 +128,14 @@ footer h1{
     align-items: center;
   }
 
-  .imagen4{
+  .imagen-4{
     width: 300px;
     margin: 10px;
     display: block;
     margin: auto;
   }
 
-  .imagen5{
+  .imagen-5{
     width: 200px;
     margin: 10px;
     border-bottom-left-radius: 10px rgb(245, 86, 75);
@@ -155,7 +143,7 @@ footer h1{
 
   /*estilos de productos*/
 
-  .imagen6{
+  .imagen-6{
     width: 250px;
     margin: 30px;
   }
@@ -182,7 +170,7 @@ footer h1{
     align-items: center;
   }
 
-  .imagen7{
+  .imagen-7{
     width: 250px;
     margin: 30px;
   }
@@ -200,7 +188,7 @@ footer h1{
     align-items: center;
   }
 
-  .imagen8{
+  .imagen-8{
     width: 250px;
     margin: 30px;
   }
@@ -211,4 +199,48 @@ footer h1{
     text-align: left;
     margin: 5px;
     padding: 5px;
+  }
+
+  /*media queries para mobile */
+  /* Lo aplique para todos los html menos el de contacto */
+
+  @media (max-width:767px){
+    .imagenes-inicio{
+      display: grid;
+      grid-template-columns: 1fr;
+      max-width: 100%;
+      height: auto;
+    
+      /*alinear el contenido*/
+      justify-items: center;
+      align-items: center;
+    }
+
+    .imagenes-productos{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    
+      /*alinear el contenido*/
+      justify-items: center;
+      align-items: center;
+     }
+  
+
+     .imagenes-new-in{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+
+      /*alinear el contenido*/
+      justify-items: center;
+      align-items: center;
+    }
+  
+    .imagenes-liquidacion{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    
+      /*alinear el contenido*/
+      justify-items: center;
+      align-items: center;
+    }
   }
